@@ -227,11 +227,12 @@ st.markdown("""
 st.divider()
 
 # ─── API Key ──────────────────────────────────────────────────────────────────
-gemini_key = st.text_input(  # ✅ variable renamed: groq_key → gemini_key
+gemini_key = st.secrets.get("GEMINI_API_KEY", "") or st.text_input(
     "🔑 Gemini API Key",
     type="password",
     value="",
     help="Get your key from https://aistudio.google.com/apikey"
+
 )
 
 if gemini_key:
