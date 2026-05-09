@@ -4,3 +4,4 @@ lancedb
 openai
 python-dotenv
 fastembed
+google-genai
