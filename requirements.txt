@@ -3,3 +3,4 @@ agno>=2.2.10
 lancedb
 openai
 python-dotenv
+fastembed
